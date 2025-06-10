@@ -27,3 +27,48 @@
     font-weight: bold;
     margin-right: 5px;
 }
+
+.green {
+    background-color: rgb(24, 165, 19);
+    color: white;
+}
+
+.yellow {
+    background-color: rgb(197, 209, 27);
+    color: white;
+}
+
+.gray {
+    background-color: rgb(92, 92, 92);
+    color: white;
+}
+
+#keyboard {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    min-width: 30px;
+    min-height: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

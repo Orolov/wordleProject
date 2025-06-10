@@ -23,6 +23,11 @@ class SingleGuess {
         }
     }
 
+
+    /**
+     * Private method to update our current states for the user's guessed word
+     * and whether the guess is correct
+     */
     #updateStates() {
         let guessedWord = "";
         for (let i = 0; i < this.#guessedLetters.length; i++) {
@@ -34,6 +39,13 @@ class SingleGuess {
         }
     }
 
+
+    /**
+     * Method to ensure updating our states
+     * and determining whether our letter being passed through is in the correct position
+     * and if it exists within the master word
+     * @param {string} letter 
+     */
     guess(letter) {
         this.#updateStates();
         let activeLetterIndex = this.#guessedWord.length;
@@ -41,8 +53,16 @@ class SingleGuess {
         this.#updateStates();
     }
 
+
+    /**
+     * Getter method for our list that holds class objects of SingleLetters
+     */
     get getGuessedLetter() {
         return this.#guessedLetters;
+    }
+
+    get getCorrectlyGuessed() {
+        return this.#correctlyGuessed;
     }
 }
 
